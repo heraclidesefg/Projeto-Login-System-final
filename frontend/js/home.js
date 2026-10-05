@@ -83,7 +83,7 @@ fetch('js/dados_dashboard.json')
   });
 
 const nomeSalvo = localStorage.getItem('nomeUsuario');
-const spanNome = document.getElementById('nome-usuario');
+const spanNome = document.getElementById('nome');
 if (spanNome && nomeSalvo) {
   spanNome.textContent = nomeSalvo;
 }

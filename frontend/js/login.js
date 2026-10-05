@@ -19,8 +19,7 @@ form.addEventListener("submit", async (e) => {
                 method: "POST",
 
                 headers: {
-                    "Content-Type":
-                        "application/json"
+                    "Content-Type": "application/json"
                 },
 
                 body: JSON.stringify({
@@ -31,8 +30,7 @@ form.addEventListener("submit", async (e) => {
         );
 
 
-        const json =
-            await resposta.json();
+        const json = await resposta.json();
 
 
         /* ============================
@@ -41,9 +39,17 @@ form.addEventListener("submit", async (e) => {
 
         if (resposta.ok) {
 
+            // Salva o token JWT
             localStorage.setItem(
                 "token",
                 json.token
+            );
+
+
+            // Salva os dados do usuário
+            localStorage.setItem(
+                "nomeUsuario",
+                JSON.stringify(json.usuario.nome)
             );
 
 
