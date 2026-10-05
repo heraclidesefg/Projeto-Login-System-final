@@ -1,0 +1,111 @@
+{
+  "kpis": {
+    "totalAcidentes": 48712,
+    "totalMortos": 4121,
+    "mediaMortosPorAcidente": 0.085
+  },
+  
+  "porMes": [
+    {
+      "mes": 1,
+      "nome": "Janeiro",
+      "acidentes": 5825,
+      "mortos": 495
+    },
+    {
+      "mes": 2,
+      "nome": "Fevereiro",
+      "acidentes": 5597,
+      "mortos": 443
+    },
+    {
+      "mes": 3,
+      "nome": "Março",
+      "acidentes": 6137,
+      "mortos": 470
+    },
+    {
+      "mes": 4,
+      "nome": "Abril",
+      "acidentes": 5984,
+      "mortos": 512
+    },
+    {
+      "mes": 5,
+      "nome": "Maio",
+      "acidentes": 6312,
+      "mortos": 509
+    },
+    {
+      "mes": 6,
+      "nome": "Junho",
+      "acidentes": 6186,
+      "mortos": 542
+    },
+    {
+      "mes": 7,
+      "nome": "Julho",
+      "acidentes": 6290,
+      "mortos": 542
+    },
+    {
+      "mes": 8,
+      "nome": "Agosto",
+      "acidentes": 6381,
+      "mortos": 608
+    }
+  ],
+
+  "porUf": [
+    {
+      "uf": "MG",
+      "acidentes": 6307
+    },
+    {
+      "uf": "SC",
+      "acidentes": 5600
+    },
+    {
+      "uf": "PR",
+      "acidentes": 5267
+    },
+    {
+      "uf": "RJ",
+      "acidentes": 4366
+    },
+    {
+      "uf": "RS",
+      "acidentes": 3042
+    },
+    {
+      "uf": "SP",
+      "acidentes": 2987
+    },
+    {
+      "uf": "BA",
+      "acidentes": 2837
+    },
+    {
+      "uf": "GO",
+      "acidentes": 2307
+    },
+    {
+      "uf": "PE",
+      "acidentes": 2150
+    },
+    {
+      "uf": "MT",
+      "acidentes": 1723
+    }
+  ],
+
+   "porDia": [
+    { "dia": "Domingo",      "mortos": 843 },
+    { "dia": "Sábado",       "mortos": 663 },
+    { "dia": "Sexta-feira",  "mortos": 588 },
+    { "dia": "Segunda-feira","mortos": 577 },
+    { "dia": "Quinta-feira", "mortos": 515 },
+    { "dia": "Quarta-feira", "mortos": 489 },
+    { "dia": "Terça-feira",  "mortos": 446 }
+  ]
+}

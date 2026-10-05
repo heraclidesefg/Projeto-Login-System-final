@@ -6,6 +6,71 @@
     <title>Home</title>
 </head>
 <body>
-    <h1>Bem vindo à nossa página</h1>
+    <header class="home-header">
+  <h1>Bem-vindo(a), <span id="nome"></span>!</h1>
+  <button id="btn-logout" class="btn-logout">Sair</button>
+</header>
+
+    <!-- ================= SEÇÕES DO DASHBOARD ================= -->
+<section class="kpis">
+  <div class="kpi-card">
+    <h3>Total de Acidentes</h3>
+    <p class="kpi-valor" id="kpi-acidentes">--</p>
+    <span class="kpi-descricao">Ocorrências em 2026 (jan–ago)</span>
+  </div>
+  <div class="kpi-card">
+    <h3>Vítimas Fatais</h3>
+    <p class="kpi-valor" id="kpi-mortos">--</p>
+    <span class="kpi-descricao">Óbitos registrados em 2026</span>
+  </div>
+  <div class="kpi-card">
+    <h3>Média de Mortos por Acidente</h3>
+    <p class="kpi-valor" id="kpi-media">--</p>
+    <span class="kpi-descricao">Severidade média por ocorrência</span>
+  </div>
+</section>
+
+<section class="graficos">
+  <div class="grafico-card">
+    <h3>Evolução mensal das ocorrências (jan–ago 2026)</h3>
+    <canvas id="graficoMensal"></canvas>
+  </div>
+  <div class="grafico-card">
+    <h3>Top 10 estados com mais ocorrências</h3>
+    <canvas id="graficoUf"></canvas>
+  </div>
+</section>
+
+<section class="graficos">
+  <div class="grafico-card">
+    <h3>Vítimas fatais por dia da semana</h3>
+    <canvas id="graficoDia"></canvas>
+  </div>
+</section>
+
+<section class="insights">
+  <h2>O que os dados mostram</h2>
+  <div class="insight-card">
+    <h4>Concentração regional</h4>
+    <p>Minas Gerais concentra 12,9% de todos os acidentes de 2026 (6.307 ocorrências), 12,6% acima de Santa Catarina. O trio MG-SC-PR responde por 35,3% do país — a fiscalização estrutural deve priorizar esses corredores.</p>
+  </div>
+  <div class="insight-card">
+    <h4>Sazonalidade</h4>
+    <p>Sextas, sábados e domingos concentram 50,8% das mortes do ano (2.094 óbitos). O risco letal por dia no fim de semana é 37,7% superior ao dos dias úteis — operações com etilômetro devem cobrir de sexta à noite a domingo.</p>
+  </div>
+  <div class="insight-card">
+    <h4>Fator causal</h4>
+    <p>Condutas humanas evitáveis (reação tardia, velocidade incompatível, álcool e sonolência) respondem por 65,6% das causas registradas. Fiscalização comportamental salva mais vidas que obras generalizadas.</p>
+  </div>
+</section>
+
+<section class="conclusao">
+  <h2>Conclusão e recomendações</h2>
+  <p>A letalidade de 2026 (4.121 mortos em 48.712 ocorrências) não se distribui de forma uniforme: concentra-se no trio MG-SC-PR, nos fins de semana e em condutas evitáveis. Recomenda-se direcionar as operações de fiscalização da PRF para esses três recortes.</p>
+</section>
+<!-- ================= FIM DO DASHBOARD ================= -->
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/home.js"></script>
 </body>
 </html>
